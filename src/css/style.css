@@ -6,12 +6,313 @@
 html {
     font-family: 'Roboto', sans-serif;
 }
+body {
+    position: relative;
+}
 .container {
     width: 1140px;
     margin: 0 auto;
     position: relative;
 }
+header {
+    position: fixed;
+    min-height: 50px;
+    width: 100%;
+    background-color: #212121;
+    z-index: 5;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+.menu .menu_link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+}
+.menu .menu_link:hover {
+    text-decoration: none;
+    color: #1eacc7
+    
+}
 
+
+
+.subheader {
+    z-index: 2;
+    padding: 19px 0 17px 0;
+    min-height: 84px;
+    background-color: rgba(0,0,0, .6);
+}
+.subheader .subheader_logotext {
+opacity: 0.5;
+color: #ffffff;
+font-size: 13px;
+font-weight: 300;
+margin-top: 2px;
+}
+.subheader .subheader_link {
+    max-width: 100%;
+    
+}
+.subheader .subheader_logo:hover {
+    border-radius: 8px;
+    box-shadow: 0 2px 9px 0 rgba(0,0,0,0.2), 0 2px 20px 0 rgba(0,0,0,0.19);
+}
+.subheader .subheader_call {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+}
+.subheader .subheader_phone {
+    display: block;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: right;
+}
+.subheader .subheader_phone:hover {
+    color: #1eacc7;
+}
+.subheader .subheader_phone:hover {
+    text-decoration: none;
+}
+
+.btn {
+    width: 172px;
+    height: 46px;
+    border: none;
+    border-radius: 4px;
+    /* box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12); */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 0px solid rgba(0, 0, 0, 0.07);
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+
+   
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.btn:focus {
+    outline: none;
+}
+
+
+
+.btn-big {
+    display: block;
+    margin: 0 auto;
+    margin-top: 118px;
+    width: 259px;
+    height: 63px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 0px solid rgba(0, 0, 0, 0.07);
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+
+
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.promo {
+    padding: 50px 0 135px 0;
+    z-index: -1;
+    top: 50px;
+    width: 100%;
+    min-height: 799px;
+    background: url('../img/Promo/bg/promo_bg.png') center center / cover no-repeat;
+}
+.promo .promo_header {
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.promo .promo_subheader {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.promo .promo_text {
+    margin-top: 23px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+
+.mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.section-header {
+    margin-top: 38px;
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reasons {
+    padding: 71px 0 65px 0;
+}
+.reasons .reasons_item {
+    display: flex;
+    margin-top: 35px;
+    height: 142px;
+}
+.reasons .reasons_circle {
+    margin-left: 12px;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reasons .reasons_text {
+    width: 342px;
+}
+.reasons .reasons_text_header {
+    color: #202020;
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+}
+.reasons .reasons_text_text {
+    color: #202020;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.section-subheader {
+    margin-top: 19px;
+    margin-bottom: 13px;
+    color: #222222;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.mobile {
+    min-height: 863px;
+    padding: 48px 0 79px 0;
+}
+.mobile .mobile_item {
+    width: 320px;
+    height: 280px;
+    margin-top: 19px;
+    padding: 91px 23px 35px 23px;
+    position: relative;
+}
+.mobile .mobile_item1 {
+    background: url('../img/mobile/mobilebg1.png') center center / cover no-repeat;
+}
+.mobile .mobile_item2 {
+    background: url('../img/mobile/mobilebg2.png') center center / cover no-repeat;
+}
+.mobile .mobile_item3 {
+    background: url('../img/mobile/mobilebg3.png') center center / cover no-repeat;
+}
+.mobile .mobile_item4 {
+    background: url('../img/mobile/mobilebg4.png') center center / cover no-repeat;
+}
+.mobile .mobile_item5 {
+    background: url('../img/mobile/mobilebg5.png') center center / cover no-repeat;
+}
+.mobile .mobile_item6 {
+    background: url('../img/mobile/mobilebg6.png') center center / cover no-repeat;
+}
+.mobile .mobile_text {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+.mobile .mobile_circle {
+    width: 26px;
+    height: 26px;
+    background-color: #000000;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 35px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mobile .mobile_circle:hover {
+    cursor: pointer;
+}
+
+.whitetext {
+    color: white;
+}
+.whitebg {
+    background-color: white;
+    color: black;
+}
+
+.car {
+    min-height: 896px;
+    padding: 57px 0 138px 0;
+    background: url('../img/Car/car_bg.png') center center / cover no-repeat;
+}
+.car .section-header {
+    margin-top: 32px;
+}
+.car .car_undertext {
+    margin-top: 540px;
+    color: #222222;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
 
 
 
