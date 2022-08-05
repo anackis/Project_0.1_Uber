@@ -39,7 +39,7 @@
 		a
 			font-size: 9px
 	.menu
-		padding: 13px 25px\
+		padding: 13px 25px
 	.promo
 		img
 			width: 100%
@@ -78,7 +78,7 @@
 		right: 10px
 		top: 50%
 		transform: translateY(-50%)
-		height: 13px
+		height: 15px
 		width: 26px
 		span
 			display: block
@@ -91,11 +91,85 @@
 			span
 				margin-bottom: -2px
 				&:nth-child(1)
-					transform: rotate(-45deg)
+					transform: translateY(3px)	rotate(-45deg)
 				&:nth-child(2)
 					display: none
 				&:nth-child(3)
-					transform: rotate(45deg)
+					transform: translateY(3px) rotate(45deg)
+	.subheader
+		&_logotext
+			display: none
+		&_call
+			display: none
+		&_flexcentr
+			display: flex
+			align-items: center
+		.btn 
+			display: none
+		.btnformobile
+			display: block
+			margin: 0 auto
+			width: 185px
+		&_phone
+			text-align: center
+	
+	.mobile
+		&_flexcenter
+			display: flex
+			justify-content: center
+		&_item
+			margin: 10px 10px
+
+	.footer
+		&_wrapper
+			flex-direction: column
+			position: relative
+			align-items: center
+		&_left
+			
+			order: 2
+			margin-top: 16px
+		&_center
+			width: 70%
+			order: 1
+		&_right
+			width: 100%
+			order: 3
+			flex-direction: row
+			margin-top: 19px
+		&_center
+			
+			&_divider
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				margin: 0 auto
+
+	.terms
+		.blue_wrap
+			min-height: 140px
+		&_redwrap_head 
+			margin-top: 40px
+
+
+	
+
+
+
+@media (max-width: 575px)
+	.container	
+		width: 100%
+	.subheader
+		.row
+			width: 100%
+		&_phone
+			font-weight: 400
+			font-size: 12px
+		.btnmobile
+			width: 110px
+			height: 22px
+
 
 
 
