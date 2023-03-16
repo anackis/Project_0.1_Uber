@@ -1,5 +1,4 @@
-# ProjectNr1
-Uber Web
+It is one of my first projects. It is build on HTML + CSS (Adaptive) + GULP + little JS script for hamburger.
 
 ![localhost_3000_](https://user-images.githubusercontent.com/61510461/225568829-7c179ed0-6702-428f-b83c-a70b3674f5c0.png)
 
